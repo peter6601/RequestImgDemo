@@ -20,6 +20,11 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    @IBAction func enter(_ sender: Any) {
+        
+        let vc = ListViewController(nibName: "ListViewController", bundle: nil)
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
 }
 
